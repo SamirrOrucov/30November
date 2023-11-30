@@ -1,0 +1,23 @@
+:root{
+    --main-bg-color:white;
+    --main-text-color:black;
+}
+.dark{
+    transition: 30000ms;
+    --main-text-color:white;
+    --main-bg-color:blue;
+    ::selection{
+        background: #ffffff;
+    color: blue;
+
+    }
+}
+body{
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    
+}
+p::selection {
+    background: blue;
+    color: rgb(255, 255, 255);
+  }
